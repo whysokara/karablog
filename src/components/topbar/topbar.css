@@ -22,7 +22,7 @@
   flex: 6;
 }
 
-.toplist {
+.topList {
   display: flex;
   justify-content: center;
   align-items: center;

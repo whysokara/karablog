@@ -1,5 +1,5 @@
 import "./login.css";
-import Sidebar from "../../components/sidebar/Sidebar";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 const Login = () => {
   return (
     <div className="login">
@@ -19,7 +19,11 @@ const Login = () => {
         />
         <button className="loginButton">Login</button>
       </form>
-      <button className="loginRegisterButton">Register</button>
+      <button className="loginRegisterButton">
+        <Link to="/register" className="link">
+          Register
+        </Link>
+      </button>
     </div>
   );
 };
