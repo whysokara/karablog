@@ -1,9 +1,12 @@
 const express = require("express");
 const app = express();
 const dotenv = require("dotenv");
+
 const mongoose = require("mongoose");
+const authRoute = require("./routes/auth");
 
 dotenv.config();
+app.use(express.json());
 
 mongoose
   .connect(process.env.MONGO_URL, {
@@ -17,6 +20,8 @@ mongoose
 app.use("/", (req, res) => {
   console.log("This is main url");
 });
+
+app.use("/api/auth", authRoute);
 
 const PORT = "5000";
 app.listen(PORT, () => {
