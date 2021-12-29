@@ -13,7 +13,12 @@
   border-radius: 5px;
   object-fit: cover;
 }
-
+.singlePostTitle {
+  text-align: center;
+  margin: 10px;
+  font-size: 28px;
+  font-family: "Lora", serif;
+}
 .singlePostEdit {
   float: right;
   font-size: 16px;
@@ -22,4 +27,31 @@
 .singlePostIcon {
   margin-left: 10px;
   cursor: pointer;
+}
+
+.singlePostIcon:first-child {
+  color: teal;
+}
+.singlePostIcon:last-child {
+  color: tomato;
+}
+
+.singlePostInfo {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #b39656;
+  font-family: "Varela Round", sans-serif;
+}
+
+.singlePostDesc {
+  font-size: 18px;
+  line-height: 25px;
+  color: #666;
+}
+.singlePostDesc::first-letter {
+  font-size: 30px;
+  font-weight: 300;
+  margin-left: 20px;
 }
